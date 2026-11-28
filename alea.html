@@ -92,7 +92,7 @@ function sum(xs){return xs.reduce((a,b)=>a+b,0)}
 function mean(xs){return xs.length?sum(xs)/xs.length:0}
 function std(xs){const m=mean(xs);return Math.sqrt(mean(xs.map(x=>(x-m)**2)))}
 
-let votes={L:0,R:0);
+let votes={L:0,R:0};
 function vote(s){votes[s]+=1;document.getElementById('vL').textContent=votes.L;document.getElementById('vR').textContent=votes.R}
 function resetVotes(){votes={L:0,R:0};document.getElementById('vL').textContent=0;document.getElementById('vR').textContent=0}
 
